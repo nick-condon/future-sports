@@ -1,0 +1,11 @@
+:root {
+    --blue-color: #2B4451;
+    --brown-color: #BA8B69;
+    --grey-color: #B7C7D4;
+  }
+
+.OpenBlogLink {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--blue-color);
+}

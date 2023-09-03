@@ -1,0 +1,44 @@
+.OverlayContainer {
+    width: auto;
+    height: auto;
+    opacity: 95;
+    top: 0;
+    left: 0;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    position: fixed;
+    background-color: var(--grey-color);
+    overflow: auto;
+    z-index: 110;
+  }
+  
+  /* Darken behind the popup to give it more focus*/
+  .OverlayBackground {
+    z-index: 108;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* This is where we will put a button to close the window */
+  .OverlayControls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .OverlayClose {
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  .OverlayClose:after {
+    display: inline-block;
+    content: "\00d7";
+  }

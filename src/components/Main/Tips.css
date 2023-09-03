@@ -1,0 +1,61 @@
+:root {
+    --blue-color: #2B4451;
+    --brown-color: #BA8B69;
+    --grey-color: #B7C7D4;
+  }
+
+.Tips {
+    background-color: var(--grey-color);
+}
+
+.TipsGridContainer {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 2%;
+}
+
+.TipsGridVideo {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: var(--brown-color);
+    box-shadow: -2px 2px 25px 0px rgba(0,0,0,0.25);
+}
+
+.TipsGridHeading {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.TipsGridBlog {
+    padding-top: 20%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: center;
+}
+
+.TipsGridBlog a {
+  color: var(--blue-color);
+}
+
+blockquote {
+    font-style: italic;
+    border: none;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    display: block;
+    text-align: center;
+}
+
+blockquote:before {
+    content: open-quote;
+    font-weight: bold;
+    color: var(--grey-color);
+  }
+  
+  blockquote:after {
+    content: close-quote;
+    font-weight: bold;
+    color: var(--grey-color);
+  }

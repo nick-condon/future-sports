@@ -1,0 +1,46 @@
+
+:root {
+    --blue-color: #2B4451;
+    --brown-color: #BA8B69;
+    --grey-color: #B7C7D4;
+  }
+
+.Navigation {
+    background: var(--blue-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logo {
+    color: var(--grey-color);
+    font-size: 28px;
+  }
+  
+  ul.NavigationMenus {
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 40px;
+  }
+  
+  ul.NavigationMenus li {
+    list-style: none;
+    padding: 0 15px;
+  }
+  
+  ul.NavigationMenus li a {
+    color: var(--grey-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  ul.NavigationMenus li a:hover {
+    color: var(--brown-color);
+  }
