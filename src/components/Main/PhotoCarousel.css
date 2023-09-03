@@ -1,0 +1,71 @@
+:root {
+    --blue-color: #2B4451;
+    --brown-color: #BA8B69;
+    --grey-color: #B7C7D4;
+  }
+
+
+.CarouselContainer {
+    /* max-width: 2000px;*/
+     position: relative;
+     margin: auto;
+     z-index: 99;
+ }
+ 
+ .Carousel {
+     background:rgba(0,0,0,0.6);
+     /* display: none; */
+ }
+ 
+ /* Insert forward & back arrows */
+ .Back, .Forward {
+     cursor: pointer;
+     position: absolute;
+     top: 48%;
+     width: auto;
+     margin-top: -23px;
+     padding: 17px;
+     color: #DBECEA;
+     font-weight: bold;
+     font-size: 19px;
+     transition: 0.4s ease;
+     border-radius: 0 5px 5px 0;
+     user-select: none;
+ }
+
+ /* Place the "forward button" to the right */
+.Forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.Back {
+    left: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .Forward:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.Heading {
+    color: var(--grey-color);
+    font-size: 60px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 60%;
+    right:10%;
+}
+
+.Info {
+    color: var(--brown-color);
+    font-size: 36px;
+    padding: 10px 14px;
+    position: absolute;
+    right: 15%;
+    bottom: 55%;
+}
+
+.Image {
+    width: 100%;
+}
