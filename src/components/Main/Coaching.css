@@ -1,0 +1,51 @@
+:root {
+    --blue-color: #2B4451;
+    --brown-color: #BA8B69;
+    --grey-color: #B7C7D4;
+  }
+
+.Coaching {
+    background-color: var(--brown-color);
+}
+
+.CoachingServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    background-color: var(--brown-color);
+    padding: 10%;
+    padding-top: 4%;
+    width: 100%;
+}
+
+.CoachingServices > div {
+    padding: none;
+    margin: 0px;
+    text-align: center;
+    place-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    background-color: white;
+    padding-bottom: 10%;
+    width: 100%;
+}
+
+.CoachingServices > div:hover {
+  /* Darken if the mouse goes over the box*/
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+.Button {
+    background-color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 18%;
+    padding-right: 18%;
+    border-style: none;
+    color: var(--blue-color);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+}
+
+.Button:hover {cursor:pointer;}

@@ -20,22 +20,6 @@ export function Overlay({ isOpen, onClose, children }) {
         }
         
         </>
-//         {
-//             // isOpen ? (
-//             //     <div className = "Overlay">
-//             //     <div className = "OverlayBackground" />
-//             //         <div className="OverlayContent">
-//             //             <div className="OverlayControls">
-//             //                 <button className="OverlayClose" type="button" onClick={onClose} />
-//             //             </div>
-//             //             <fragment>
-//             //                 {children}
-//             //             </fragment>
-//             //         </div>
-//             //     </div>
-//             // ) : null
-// }
-
     );
 }
 
