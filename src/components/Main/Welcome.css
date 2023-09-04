@@ -1,0 +1,56 @@
+
+.Welcome {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 15%;
+}
+
+.Welcome > div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+}
+
+.WelcomeOverlayMessage {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: absolute;
+    background-color: var(--blue-color);
+    top: 20%;
+    left: 60%;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    box-shadow: rgba(0, 0, 0, 0.25) -2px 2px 25px 0px;
+}
+
+.H3Welcome {
+    color: var(--brown-color);
+    margin: 0px;
+}
+
+.PWelcome {
+    color:white;
+    margin-top: 4%;
+}
+
+.welcome-btn {
+    background-color: var(--grey-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-style: none;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 4%;
+}
+
+.welcome-btn:hover {
+  padding-right: 12%;
+}
