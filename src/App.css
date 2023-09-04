@@ -1,3 +1,40 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Defining colours to standardise, reduce typos and allow easier specification */
+:root {
+--blue-color: #2B4451;
+--brown-color: #BA8B69;
+--grey-color: #B7C7D4;
+}
+
+/* Used on the Welcome section */
+h1 {
+  color: white;
+  font-size: 55px;
+  margin: 0px;
+}
+
+/* Used for section headings */
+h2 {
+  text-align: center;
+  padding-top: 70px;
+  color:  var(--blue-color);
+  font-size: 18px;
+}
+
+/* Used on the welcome section */
+h3 {
+  color:  var(--blue-color);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-size: 18px;
+}
+
+
 .App {
   text-align: center;
 }
