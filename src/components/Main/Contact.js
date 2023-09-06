@@ -22,9 +22,9 @@ const Contact = () => {
                 </form>
             </div>
             <div>
-                <p style={{ color: "white" }}><strong>Address:<br /></strong>Brisbane st, <br />Mellbourne</p>
-                <p style={{ color: "white" }}><strong>Ph:<br /></strong>03 4444 3333</p>
-                <p style={{ color: "white" }}><strong>Email:<br /></strong>admin@futuresports.com.au</p>
+                <p style={{ color: "white" }}><strong>Address: </strong>Brisbane st, Mellbourne</p>
+                <p style={{ color: "white" }}><strong>Ph: </strong>03 4444 3333</p>
+                <p style={{ color: "white" }}><strong>Email: </strong>admin@futuresports.com.au</p>
             </div>
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14047.89060974969!2d153.3950935!3d-28.3294293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b90f14b99ee0d0b%3A0x62c934772f53df63!2sMurwillumbah%20Tennis%20Club!5e0!3m2!1sen!2sau!4v1691273813621!5m2!1sen!2sau" width="200" height="150" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
