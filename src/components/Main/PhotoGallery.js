@@ -61,7 +61,7 @@ const PhotoGallery = () => {
     const closeModal = () => { setModalDisplay(false)}
 
     return (
-        <div className="PhotoGallery">
+        <div className="PhotoGallery" id="Gallery">
             <h2>Photo Gallery</h2>
             <div className="PhotoGalleryGridContainer">
                 {photoArray.map((item) => {

@@ -32,7 +32,7 @@ const Tips = () => {
 
 
     return (
-        <div className="Tips">
+        <div className="Tips" id="Tips">
             <div className="TipsGridContainer">
                 <div className="TipsGridVideo">
                     <h2>Video Tennis Tips</h2>

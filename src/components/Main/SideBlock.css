@@ -1,0 +1,41 @@
+.SideBlock {
+    position: fixed;
+    z-index: 200;
+    top: 30%;
+    width: 250px;
+    height: auto;
+    min-height: 320px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #96bd42;
+}
+
+.sideBlockButton {
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    width: 83px;
+    height: 83px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #96bd42;
+    cursor: pointer;
+}
+
+.ButtonImage {
+    width: 80px;
+    height: 80px;
+}
+
+  .SideBlockClose {
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .SideBlockClose:after {
+    display: inline-block;
+    content: "\00d7";
+  }

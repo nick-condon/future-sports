@@ -10,7 +10,7 @@ const Welcome = () => {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
     return (
-        <div className="Welcome">
+        <div className="Welcome" id="Welcome">
             <div>
                 <img className="WelcomeImage" src={WelcomePhoto} alt="empty tennis court with net" />
             </div>
