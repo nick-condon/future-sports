@@ -1,10 +1,8 @@
 import React from 'react';
-import WeatherInfo from './WeatherInfo';
 import PhotoCarousel from "./PhotoCarousel";
 import Welcome from "./Welcome";
 import Coaching from "./Coaching";
 import PhotoGallery from "./PhotoGallery";
-// import WeatherDashboard from "./WeatherDashboard";
 import Tips from "./Tips";
 // import Blog from "./Blog";
 import Contact from "./Contact";
@@ -37,7 +35,6 @@ const Main = () => {
     
     return (
         <div className="MainSection">
-            <WeatherInfo />
             <PhotoCarousel imagesInfo={photoCarouselList} />
             <Welcome />
             <Coaching />
