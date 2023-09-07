@@ -40,13 +40,6 @@ const Main = () => {
             <Coaching />
             <PhotoGallery />
             <Tips />
-
-            {/* <div className="Blog">
-                <Blog text={blogText} />
-            </div>
-            <div className="Blog">
-                <Blog text={blogText2} />
-            </div> */}
             <Contact />
         </div>
     );
