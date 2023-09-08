@@ -12,6 +12,7 @@ const Welcome = () => {
     return (
         <div className="Welcome" id="Welcome">
             <div>
+            <div>
                 <img className="WelcomeImage" src={WelcomePhoto} alt="empty tennis court with net" />
             </div>
             <div className="WelcomeOverlayMessage">
@@ -19,7 +20,8 @@ const Welcome = () => {
                 <h3 className="H3Welcome">to Future Sports</h3>
                 <p className="PWelcome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p className="PWelcome">Mauris in aliquam sem fringilla ut morbi tincidunt id neque aliquam vestibulum.</p>
-                <button type="submit" class="welcome-btn" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>Learn More &#8594;</button>
+                <button type="submit" class="WelcomeBtn" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>Learn More &#8594;</button>
+            </div>
             </div>
             <Overlay
             isOpen={isOverlayOpen}

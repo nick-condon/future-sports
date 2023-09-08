@@ -3,6 +3,7 @@ import './Navigation.css';
 import TournamentsTable from "../Main/TournamentsTable";
 import SearchMenuIcon from '../../assets/images/search.png';
 import Overlay from "../Main/Overlay";
+import Search from "../Main/Search";
 
 const Navigation = () => {
 
@@ -66,9 +67,9 @@ const Navigation = () => {
       </div>
       {(searchMenuToggle && (
         <div>
-          <form id="searchBox" className="SearchBox" onsubmit="search_website()">
+          <form id="searchBox" className="SearchBox" onsubmit={Search()}>
             <input id="searchbar" type="text" className="SearchData" placeholder="Search" required />
-            <button type="button" value="Search" className="SearchButton" onclick="search();"><img src={SearchMenuIcon} width="22px" alt="" /></button>
+            <button type="button" value="Search" className="SearchButton" onClick={null} ><img src={SearchMenuIcon} width="22px" alt="" /></button>
           </form>
         </div>
       ))
