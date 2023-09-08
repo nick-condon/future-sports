@@ -63,7 +63,9 @@ export default class Contact extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if (validateForm(this.state.errors)) {
+        if (this.state.fullName == null || this.state.email == null || this.state.message == null)  {
+            alert('please fill in all the fields');
+        } else if (validateForm(this.state.errors)) {
             console.info('Valid Form')
             alert('Thank you for your message!')
             document.getElementById("ContactFullName").value = '';
@@ -84,7 +86,7 @@ export default class Contact extends React.Component {
                     <h2 style={{ color: "white", textAlign: "left", paddingTop: "0px" }}>Contact</h2>
                     <h3 style={{ color: "white", textAlign: "left" }}>and we'll return with an answer!</h3>
                     <form onSubmit={this.handleSubmit} noValidate>
-                        <input type="text" id="ContactFullName" style={{ height: "20px", fontSize: "14pt" }} name="fullName" onChange={this.handleChange} placeholder="Full Name*" />
+                        <input type="text" id="ContactFullName" style={{ height: "20px", fontSize: "14pt" } } name="fullName" onChange={this.handleChange} placeholder="Full Name*" />
                         <br />
                         {errors.fullName.length > 0 && <span className='Error'>{errors.fullName}</span>}
                         <br />

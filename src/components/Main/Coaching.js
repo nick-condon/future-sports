@@ -6,6 +6,8 @@ import CoachingPhoto1 from "../../assets/images/services-1.jpg";
 import CoachingPhoto2 from "../../assets/images/services-2.jpg";
 import CoachingPhoto3 from "../../assets/images/services-3.jpg";
 import CoachingPhoto4 from "../../assets/images/services-4.jpg";
+import IndividualCoachingForm from './IndividualCoachingForm.js';
+import HolidayProgramForm from "./HolidayProgramForm";
 
 const Coaching = () => {
     const [isIndOverlayOpen, setIsIndOverlayOpen] = useState(false);
@@ -28,28 +30,9 @@ const Coaching = () => {
                         isOpen={isIndOverlayOpen}
                         onClose={() => setIsIndOverlayOpen(!isIndOverlayOpen)}
                     >
-                        <div>
-                            <h2>Individual Coaching</h2>
-                            <p>Register below</p>
-                            <br />
-                            <form method="post">
-                                <label for="name">Name:  </label>
-                                <input type="text" title="name" placeholder="Enter your name*" required />
-                                <br />
-                                <label for="email">Email:</label><br />
-                                <input type="text" title="email" placeholder="Email Address*" required />
-                                <br />
-                                <br />
-                                <p>Select which time you would like:</p><br />
-                                <input type="radio" id="saturday-11am" name="coaching-time" value="Saturday-11am" />
-                                <label for="saturday-11am">Saturday at 11am</label><br />
-                                <input type="radio" id="tuesday-5pm" name="coaching-time" value="Tuesday-5pm" />
-                                <label for="tuesday-5pm">Tuesday at 5pm</label><br />
-                                <input type="radio" id="sunday-4pm" name="coaching-time" value="Sunday-4pm" />
-                                <label for="sunday-4pm">Sunday at 4pm</label><br />
-                                <button type="submit">Send</button>
-                            </form>
-                        </div>
+                        {
+                        <IndividualCoachingForm />
+                        }
                     </Overlay>
                 </div>
                 <div>
@@ -91,31 +74,9 @@ const Coaching = () => {
                         isOpen={isHolidayOverlayOpen}
                         onClose={() => setIsHolidayOverlayOpen(!isHolidayOverlayOpen)}
                     >
-                        <div>
-                            <h2>Holiday Program</h2>
-                            <p>Register below</p>
-                            <form method="post">
-                                <label for="name">Name:</label><br />
-                                <input type="text" title="name" placeholder="Enter your name*" required />
-                                <br />
-                                <br />
-                                <label for="email">Email:</label><br />
-                                <input type="text" title="email" placeholder="Email Address*" required />
-                                <br />
-                                <br />
-                                <p>Select which programme you would like information on:</p><br />
-                                <input type="checkbox" id="term-1" name="holiday-pro" value="term-1" />
-                                <label for="term-1">Term 1 Holidays</label><br />
-                                <input type="checkbox" id="term-2" name="holiday-pro" value="Tuesday-5pm" />
-                                <label for="term-2">Term 2 Holidays</label><br />
-                                <input type="checkbox" id="term-3" name="holiday-pro" value="Sunday-4pm" />
-                                <label for="term-3">Term 3 Holidays</label><br />
-                                <input type="checkbox" id="term-4" name="holiday-pro" value="Sunday-4pm" />
-                                <label for="term-4">Term 4 Holidays</label><br />
-                                <button type="submit">Send</button>
-                            </form>
-
-                        </div>
+                        {
+                            <HolidayProgramForm />
+                        }
                     </Overlay>
                 </div>
             </div>
