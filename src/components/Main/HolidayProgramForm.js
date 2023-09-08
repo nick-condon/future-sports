@@ -20,6 +20,7 @@ export default class HolidayProgramForm extends React.Component {
         this.state = {
             fullName: null,
             email: null,
+            holidayPro: [],
             errors: {
                 fullName: '',
                 email: '',
@@ -55,7 +56,7 @@ export default class HolidayProgramForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if (this.state.fullName == null || this.state.email == null || this.state.message == null) {
+        if (this.state.fullName == null || this.state.email == null || this.state.holidayPro.length == 0) {
             alert('please fill in all the fields');
         } else if (validateForm(this.state.errors)) {
             console.info('Valid Form')
@@ -86,13 +87,13 @@ export default class HolidayProgramForm extends React.Component {
                     <br />
                     <br />
                     <p>Select which programme you would like information on:</p><br />
-                    <input type="checkbox" id="term-1" name="holiday-pro" value="term-1" />
+                    <input type="checkbox" id="term-1" name="holidayPro" value="term-1" onChange={this.handleChange} />
                     <label for="term-1">Term 1 Holidays</label><br />
-                    <input type="checkbox" id="term-2" name="holiday-pro" value="Tuesday-5pm" />
+                    <input type="checkbox" id="term-2" name="holidayPro" value="Tuesday-5pm" onChange={this.handleChange} />
                     <label for="term-2">Term 2 Holidays</label><br />
-                    <input type="checkbox" id="term-3" name="holiday-pro" value="Sunday-4pm" />
+                    <input type="checkbox" id="term-3" name="holidayPro" value="Sunday-4pm" onChange={this.handleChange} />
                     <label for="term-3">Term 3 Holidays</label><br />
-                    <input type="checkbox" id="term-4" name="holiday-pro" value="Sunday-4pm" />
+                    <input type="checkbox" id="term-4" name="holidayPro" value="Sunday-4pm" onChange={this.handleChange} />
                     <label for="term-4">Term 4 Holidays</label><br />
                     <br />
                     <br />

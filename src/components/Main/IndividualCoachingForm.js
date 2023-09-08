@@ -20,6 +20,7 @@ export default class IndividualCoachingForm extends React.Component {
         this.state = {
             fullName: null,
             email: null,
+            coachingTime: null,
             errors: {
                 fullName: '',
                 email: '',
@@ -55,7 +56,7 @@ export default class IndividualCoachingForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if (this.state.fullName == null || this.state.email == null || this.state.message == null) {
+        if (this.state.fullName == null || this.state.email == null || this.state.coachingTime == null) {
             alert('please fill in all the fields');
         } else if (validateForm(this.state.errors)) {
             console.info('Valid Form')
@@ -87,11 +88,11 @@ export default class IndividualCoachingForm extends React.Component {
                     <br />
                     <br />
                     <p>Select which time you would like:</p><br />
-                    <input type="radio" id="saturday-11am" name="coaching-time" value="Saturday-11am" />
+                    <input type="radio" id="saturday-11am" name="coachingTime" value="Saturday-11am" onChange={this.handleChange} />
                     <label for="saturday-11am">Saturday at 11am</label><br />
-                    <input type="radio" id="tuesday-5pm" name="coaching-time" value="Tuesday-5pm" />
+                    <input type="radio" id="tuesday-5pm" name="coachingTime" value="Tuesday-5pm" onChange={this.handleChange} />
                     <label for="tuesday-5pm">Tuesday at 5pm</label><br />
-                    <input type="radio" id="sunday-4pm" name="coaching-time" value="Sunday-4pm" />
+                    <input type="radio" id="sunday-4pm" name="coachingTime" value="Sunday-4pm" onChange={this.handleChange} />
                     <label for="sunday-4pm">Sunday at 4pm</label><br />
                     <br />
                     <br />
