@@ -1,24 +1,17 @@
 import React, { useState } from "react";
 import './Navigation.css';
 import TournamentsTable from "../Main/TournamentsTable";
-import SearchMenuIcon from '../../assets/images/search.png';
 import Overlay from "../Main/Overlay";
-import Search from "../Main/Search";
+
 
 const Navigation = () => {
 
   const [selectedNavItem, setSelectedNavItem] = useState("Welcome");
 
-  const [searchMenuToggle, setSearchToggle] = useState(false);
-
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
   const openOverlay = () => {
     setIsOverlayOpen(!isOverlayOpen)
-  }
-
-  const toggleSearchMenu = () => {
-    setSearchToggle(!searchMenuToggle)
   }
 
   const navItems = [
@@ -62,18 +55,6 @@ const Navigation = () => {
           );
         })}
       </ul>
-      <div className="SearchIcon">
-        <img src={SearchMenuIcon} onClick={toggleSearchMenu} alt="search magnifying glass"></img>
-      </div>
-      {(searchMenuToggle && (
-        <div>
-          <form id="searchBox" className="SearchBox" onsubmit={Search()}>
-            <input id="searchbar" type="text" className="SearchData" placeholder="Search" required />
-            <button type="button" value="Search" className="SearchButton" onClick={null} ><img src={SearchMenuIcon} width="22px" alt="" /></button>
-          </form>
-        </div>
-      ))
-      }
       <Overlay
         isOpen={isOverlayOpen}
         onClose={() => setIsOverlayOpen(!isOverlayOpen)}

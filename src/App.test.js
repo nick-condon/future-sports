@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
+import Contact from './components/Main/Contact';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+test('render email input', () => {
+  render(<Contact />);
+// Expect this to pass as it is not a valid name
+userEvent.type(screen.getByPlaceholderText(/Full Name*/), 'N')
+expect(screen.getByText(/Full Name must be at least 5 characters long!/)).toBeInTheDocument()
+
+})
