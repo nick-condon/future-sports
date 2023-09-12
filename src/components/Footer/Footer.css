@@ -1,0 +1,19 @@
+.FooterGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--blue-color);
+    min-height: 50px;
+    align-items: center;
+}
+
+.FooterGridContainer > div {
+  text-align: center;
+}
+
+.FooterGridContainer > div a {
+  color: var(--grey-color);
+}
+
+.FooterGridContainer > div a:hover {
+    cursor: pointer;
+}

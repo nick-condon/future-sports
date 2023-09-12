@@ -4,7 +4,6 @@ import Welcome from "./Welcome";
 import Coaching from "./Coaching";
 import PhotoGallery from "./PhotoGallery";
 import Tips from "./Tips";
-// import Blog from "./Blog";
 import Contact from "./Contact";
 import PhotoC1 from "../../assets/images/slide-one-doubles.jpg";
 import PhotoC2 from "../../assets/images/slide-2-balance-ball.jpg";
