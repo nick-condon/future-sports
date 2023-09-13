@@ -17,35 +17,35 @@ const PhotoCredits = () => {
                     <th>Credit Info</th>
                 </tr>
                 <tr>
-                    <td><img src={Image1} alt="lower half of two women playing tennis" style={{width:50}} /></td>
+                    <td><img href="#" src={Image1} alt="lower half of two women playing tennis" style={{width:50}} /></td>
                     <td><a style={{color: "black"}} href="https://www.123rf.com/photo_118642225_fit-happy-poeple-playing-tennis-together-sport-concept.html">123rf.com</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image2} alt="man holding tennis racquet with tennis ball balanced on its neck" style={{width:50}} /></td>
-                    <td><a style={{color: "black"}} href="">123rf.com</a></td>
+                    <td><img href="#" src={Image2} alt="man holding tennis racquet with tennis ball balanced on its neck" style={{width:50}} /></td>
+                    <td><a style={{color: "black"}} href="https://123rf.com/">123rf.com</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image3} alt="tennis racquet on the ground with four tennis balls on it in a pyramid formation" style={{width:50}} /></td>
-                    <td><a style={{color: "black"}} href="">123rf.com</a></td>
+                    <td><img href="#" src={Image3} alt="tennis racquet on the ground with four tennis balls on it in a pyramid formation" style={{width:50}} /></td>
+                    <td><a style={{color: "black"}} href="https://123rf.com/">123rf.com</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image4} style={{width:50}} alt="empty tennis court with net" /></td>
+                    <td><img href="#" src={Image4} style={{width:50}} alt="empty tennis court with net" /></td>
                     <td><a style={{color: "black"}} href="https://www.flickr.com/photos/155403590@N07/43859281035">By dejankrsmanovic</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image5} style={{width:50}} alt="Boy holding tennis raquet and ball" /></td>
+                    <td><img href="#" src={Image5} style={{width:50}} alt="Boy holding tennis raquet and ball" /></td>
                     <td><a style={{color: "black"}} href="https://www.123rf.com/photo_79193502_concentrated-boy-pitching-tennis-ball.html">123rf.com</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image6} style={{width:50}} alt="Coach helping boy with tennis" /></td>
+                    <td><img href="#" src={Image6} style={{width:50}} alt="Coach helping boy with tennis" /></td>
                     <td><a style={{color: "black"}} href="https://www.flickr.com/photos/64000826@N08/6107045658">Quickstart Tennis aids young players</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image7} style={{width:50}} alt="Woman hitting tennis ball showing her teeth" /></td>
+                    <td><img href="#" src={Image7} style={{width:50}} alt="Woman hitting tennis ball showing her teeth" /></td>
                     <td><a style={{color: "black"}} href="https://www.flickr.com/photos/45776673@N04/15051594191">2014 US Open (Tennis) - Qualifying Rounds - Melanie Oudin</a></td>
                 </tr>
                 <tr>
-                    <td><img src={Image8} style={{width:50}} alt="Smiling girl in school uniform" /></td>
+                    <td><img href="#" src={Image8} style={{width:50}} alt="Smiling girl in school uniform" /></td>
                     <td><a style={{color: "black"}} href="https://www.123rf.com/photo_79178304_portrait-of-happy-schoolgirl-in-uniform.html">123rf.com</a></td>
                 </tr>
                 <tr>

@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import React from 'react';
 
 function App() {
   return (
