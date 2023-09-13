@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://nick-condon.GitHub.io/my-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --detectOpenHandles --forceExit",
     "eject": "react-scripts eject"
