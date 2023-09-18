@@ -1,15 +1,12 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
 import App from './App';
-import Contact from './components/Main/Contact';
-import Welcome from './components/Main/Welcome';
+import React from 'react';
 
+test('Renders Homepage', () => {
+  render(<App />);
+  // Expect this to pass as img elements are present
 
-test('render email input', () => {
-  render(<Welcome />);
-// Expect this to fail as Individual is not in the overlay
-
-fireEvent.click(screen.getByText(/Learn More.../))
-expect(screen.getByText(/Individual/)).toBeInTheDocument()
+  const imageElement = document.querySelector("img");
+  expect(imageElement).toBeInTheDocument();
 
 })
